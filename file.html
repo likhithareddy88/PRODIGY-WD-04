@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sticky-header {
+            position: -webkit-sticky; /* For Safari */
+            position: sticky;
+            top: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 15px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #007BFF;
+            color: white;
+        }
+        .profile-photo {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            color: white;
+            background-color: #28a745;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .cta-button:hover {
+            background-color: #218838;
+        }
+        .section {
+            padding: 20px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 5px;
+        }
+        .about-section {
+            margin-bottom: 20px;
+        }
+        .project-card {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            background-color: #fff;
+        }
+        .project-card img {
+            width: 150px;
+            height: 100px;
+            object-fit: cover;
+        }
+        .project-info {
+            padding: 10px;
+        }
+        .project-link {
+            display: inline-block;
+            padding: 5px 10px;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            border: 1px solid #007BFF;
+            border-radius: 5px;
+        }
+        .project-link:hover {
+            background-color: #007BFF;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header class="sticky-header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <img src="images/your-photo.jpg" alt="Your Photo" class="profile-photo">
+        <h1>Innovative Web Developer Crafting Seamless Digital Experiences</h1>
+        <p>Specializing in front-end development, UX/UI design, and creating responsive websites.</p>
+        <a href="#projects" class="cta-button">View My Work</a>
+    </section>
+
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <h3>Background</h3>
+            <p>Here, you can write about your background, including your journey into web development and personal interests.</p>
+        </div>
+        <div class="about-section">
+            <h3>Education</h3>
+            <p>List your degrees, certifications, and relevant coursework.</p>
+        </div>
+        <div class="about-section">
+            <h3>Professional Experience</h3>
+            <p>Detail your professional roles, responsibilities, and achievements.</p>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <img src="images/project1.jpg" alt="Project 1">
+            <div class="project-info">
+                <h3>Project Title</h3>
+                <p>Description of the project, technologies used, and a link to the live demo or GitHub repository.</p>
+                <a href="https://github.com/your-repo" target="_blank" class="project-link">View Project</a>
+            </div>
+        </div>
+        <!-- Repeat for more projects -->
+    </section>
+
+    <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Feel free to reach out via email at <a href="mailto:your.email@example.com">your.email@example.com</a> or connect with me on <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>.</p>
+    </section>
+</body>
+</html>
